@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "94396560549",
+    "project_id": "helpdesk-rocketseat",
+    "storage_bucket": "helpdesk-rocketseat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94396560549:android:be8b2b65f6dda8220f894c",
+        "android_client_info": {
+          "package_name": "com.helpdesk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94396560549-lthtun9odcsh5amhp6eum2s3squlbrjv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcYHiOjUMZuhbp2oLdS_BBV5He_Agrtgo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94396560549-lthtun9odcsh5amhp6eum2s3squlbrjv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
