@@ -6,29 +6,29 @@ import { Button } from '@components/Controllers/Button';
 import { OrderForm } from '@components/Forms/OrderForm';
 
 export function NewOrder() {
-  const bottomSheetRef = useRef<BottomSheetModal>(null);
+    const bottomSheetRef = useRef<BottomSheetModal>(null);
 
-  function handleSnapPress() {
-    bottomSheetRef.current?.present();
-  }
+    function handleSnapPress() {
+        bottomSheetRef.current?.present();
+    }
 
-  return (
-    <>
-      <Button title="Novo chamado" onPress={handleSnapPress} />
+    return (
+        <>
+            <Button title='Novo chamado' onPress={handleSnapPress} />
 
-      <BottomSheetModalProvider>
-        <BottomSheetModal
-          ref={bottomSheetRef}
-          snapPoints={['50%']}
-          style={{ padding: 24 }}
-          enablePanDownToClose={true}
-          backdropComponent={() => <Background />}
-        >
-          <BottomSheetView>
-            <OrderForm />
-          </BottomSheetView>
-        </BottomSheetModal>
-      </BottomSheetModalProvider>
-    </>
-  );
+            <BottomSheetModalProvider>
+                <BottomSheetModal
+                    ref={bottomSheetRef}
+                    snapPoints={['65%']}
+                    style={{ padding: 24 }}
+                    enablePanDownToClose={true}
+                    backdropComponent={() => <Background />}
+                >
+                    <BottomSheetView>
+                        <OrderForm />
+                    </BottomSheetView>
+                </BottomSheetModal>
+            </BottomSheetModalProvider>
+        </>
+    );
 }
